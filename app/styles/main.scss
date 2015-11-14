@@ -1,0 +1,81 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+h1 { font: 300 55px / 53px OpenSans; color:white;}
+p { font: 400 16px / 30px OpenSans; color:white;}
+button {
+  color:#fff;
+  background-color: #1a1e1f;
+  padding: 20px 80px;
+  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  box-shadow: inset 0px 1px 0px rgba(99, 99, 99, 0.4);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: inline-block;
+  border:none;
+  &:hover, &:focus {
+  text-decoration: none;
+  background-color: #1a1e1f; }}
+
+header {
+  background: url("../images/background.jpg") center no-repeat;
+  padding:100px;
+  -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+            background-size: cover;
+  p {
+    color:#fff;
+    padding:35px 0 97px 0;
+  }
+  img {
+    padding-top:280px;
+  }
+}
+
+.iMac {
+  background: url("../images/iMac.jpg") center no-repeat;
+  -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+            background-size: cover;
+            padding: 15px 0;
+
+    &:hover, &:focus{
+      text-decoration: none;
+      background-color: #1a1e1f;    }
+    h1 {
+      padding-top:70px;
+    }
+    p {
+      padding-top:47px;
+    }
+    button {
+      margin-bottom: 169px;
+    }
+    }
+
+    .testimonials {
+
+    background:url(../images/Slider.jpg) center no-repeat;
+    padding:140px 0;
+    color:#fff;
+    background-size:cover;
+
+
+   h1 {
+    color:#fff;
+    font: italic 300 43px / 53px Lato;
+    padding:38px 0px 68px 0px;
+}
+}
