@@ -1,81 +1,153 @@
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 // endbower
-h1 { font: 300 55px / 53px OpenSans; color:white;}
-p { font: 400 16px / 30px OpenSans; color:white;}
-button {
-  color:#fff;
-  background-color: #1a1e1f;
-  padding: 20px 80px;
-  border-radius: 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  font-size: 22px;
-  letter-spacing: 2px;
-  box-shadow: inset 0px 1px 0px rgba(99, 99, 99, 0.4);
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  display: inline-block;
-  border:none;
-  &:hover, &:focus {
-  text-decoration: none;
-  background-color: #1a1e1f; }}
+h1
+{
+    font: 300 55px / 53px OpenSans; color: white;
+}
+p
+{
+    font: 400 16px / 30px OpenSans; color: white;
+}
+button
+{
+    font-size: 22px;
 
-header {
-  background: url("../images/background.jpg") center no-repeat;
-  padding:100px;
-  -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-            background-size: cover;
-  p {
-    color:#fff;
-    padding:35px 0 97px 0;
-  }
-  img {
-    padding-top:280px;
-  }
+    display: inline-block;
+
+    padding: 20px 80px;
+
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+    letter-spacing: 2px;
+
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 5px;
+    background-color: #1a1e1f;
+    box-shadow: inset 0 1px 0 rgba(99, 99, 99, .4);
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
+
+        background-color: #1a1e1f;
+    }
 }
 
-.iMac {
-  background: url("../images/iMac.jpg") center no-repeat;
-  -webkit-background-size: cover;
+header
+{
+    padding: 100px;
+
+    background: url('../images/background.jpg') center no-repeat;
+    -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
             background-size: cover;
-            padding: 15px 0;
+    p
+    {
+        padding: 35px 0 97px 0;
 
-    &:hover, &:focus{
-      text-decoration: none;
-      background-color: #1a1e1f;    }
-    h1 {
-      padding-top:70px;
+        color: #fff;
     }
+    img
+    {
+        padding-top: 280px;
+    }
+}
+
+.iMac
+{
+    padding: 15px 0;
+
+    background: url('../images/iMac.jpg') center no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+            background-size: cover;
+
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
+
+        background-color: #1a1e1f;
+    }
+    h1
+    {
+        padding-top: 70px;
+    }
+    p
+    {
+        padding-top: 47px;
+    }
+    button
+    {
+        margin-bottom: 169px;
+    }
+}
+
+.testimonials
+{
+    padding: 140px 0;
+
+    color: #fff;
+    background: url(../images/Slider.jpg) center no-repeat;
+    background-size: cover;
+
+
+    h1
+    {
+        font: italic 300 43px / 53px Lato;
+
+        padding: 38px 0 68px 0;
+
+        color: #fff;
+    }
+}
+
+.bigone {
+    background:#f6f6f4 url(../images/arrowBG.png) top no-repeat;
+    display:block;
+    padding-top:175px;
+    padding-bottom:136px;
     p {
-      padding-top:47px;
+      color:#7a8387;
     }
-    button {
-      margin-bottom: 169px;
+    h1 {
+      color:#7a8387;
+      text-transform: uppercase;
     }
-    }
-
-    .testimonials {
-
-    background:url(../images/Slider.jpg) center no-repeat;
-    padding:140px 0;
-    color:#fff;
-    background-size:cover;
-
-
-   h1 {
-    color:#fff;
-    font: italic 300 43px / 53px Lato;
-    padding:38px 0px 68px 0px;
 }
+
+.flat-box {
+   background-color: #fff;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1);
+     -moz-box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1);
+      box-shadow: 0px 3px 0px 0px rgba(234, 234, 234, 1);
+       transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+         -webkit-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+&:hover, &:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -o-transform: translate(0, -15px); -moz-transform: translate(0, -15px); }
+
+}
+footer {
+  background-color:#111;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color:#fff;
+  }
+
 }
