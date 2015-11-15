@@ -43,7 +43,7 @@ button
 
 header
 {
-    padding: 100px;
+    padding: 100px 0;
 
     background: url('../images/background.jpg') center no-repeat;
     -webkit-background-size: cover;
@@ -59,7 +59,7 @@ header
     }
     img
     {
-        padding-top: 280px;
+        margin-top: 280px;
     }
 }
 
@@ -71,7 +71,6 @@ header
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
-            background-size: cover;
             background-size: cover;
 
     &:hover,
@@ -115,7 +114,7 @@ header
 }
 
 .bigone {
-    background:#f6f6f4 url(../images/arrowBG.png) top no-repeat;
+    background:#f6f6f4 url(../images/arrowBG.jpg) top no-repeat;
     display:block;
     padding-top:175px;
     padding-bottom:136px;
@@ -126,6 +125,22 @@ header
       color:#7a8387;
       text-transform: uppercase;
     }
+    .padding80
+    {
+        padding: 0 80px;
+    }
+    .row-margin50
+    {
+        margin: 50px 0;
+    }
+    .border-right
+    {
+        border-right: 1px solid rgba(208, 217, 226, 0.4);
+    }
+}
+footer
+{
+    padding: 60px 0;
 }
 
 .flat-box {
