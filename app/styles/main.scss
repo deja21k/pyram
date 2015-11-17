@@ -5,11 +5,16 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 // endbower
 h1
 {
-    font: 300 55px / 53px OpenSans; color: white;
+    font: 200 50px / 53px OpenSans; color: white;
+    letter-spacing: 0.03em;
+}
+h3
+{
+	font-family: LeagueSpartan-Bold;
 }
 p
 {
-    font: 400 16px / 30px OpenSans; color: white;
+    font: 400 15px / 30px OpenSans; color: white;
 }
 button
 {
@@ -36,7 +41,6 @@ button
     &:focus
     {
         text-decoration: none;
-
         background-color: #1a1e1f;
     }
 }
@@ -57,9 +61,25 @@ header
 
         color: #fff;
     }
+    .italic
+    {
+        font-style: italic;
+        font-size: 16px;
+    }
     img
     {
         margin-top: 280px;
+    }
+    button
+    {
+        background: RGBA(232, 185, 104, 0);
+        border: 2px solid #fff;
+        &:hover
+        {
+            border: 2px solid #000;
+            background: RGBA(0, 0, 0, 0.7);
+        }
+
     }
 }
 
@@ -67,18 +87,19 @@ header
 {
     padding: 15px 0;
 
-    background: url('../images/iMac.jpg') center no-repeat;
+    background: #E8B968 url('../images/iMac.jpg') center no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-
-    &:hover,
-    &:focus
+    button
     {
-        text-decoration: none;
-
-        background-color: #1a1e1f;
+        background: #02596B;
+        margin: 40px 0 169px;
+        &:hover
+        {
+            background: RGBA(0, 0, 0, 0.7);
+        }
     }
     h1
     {
@@ -88,10 +109,6 @@ header
     {
         padding-top: 47px;
     }
-    button
-    {
-        margin-bottom: 169px;
-    }
 }
 
 .testimonials
@@ -99,10 +116,8 @@ header
     padding: 140px 0;
 
     color: #fff;
-    background: url(../images/Slider.jpg) center no-repeat;
+    background: url(../images/slider.jpg) center no-repeat;
     background-size: cover;
-
-
     h1
     {
         font: italic 300 43px / 53px Lato;
@@ -111,10 +126,17 @@ header
 
         color: #fff;
     }
+    p
+    {
+        font-size: 26px;
+        margin: 50px 0;
+        font-style: italic;
+    }
 }
 
-.bigone {
-    background:#f6f6f4 url(../images/arrowBG.jpg) top no-repeat;
+.bigone
+{
+    background:#f6f6f4 url(../images/arrow-bg.jpg) 51.3% -1px no-repeat;
     display:block;
     padding-top:175px;
     padding-bottom:136px;
@@ -137,6 +159,29 @@ header
     {
         border-right: 1px solid rgba(208, 217, 226, 0.4);
     }
+    .flex-control-nav
+    {
+	    margin-left:-13px;
+    }
+    h3
+    {
+        margin:50px 0 10px;
+    }
+    .flat-box
+    {
+        p
+        {
+            padding-bottom: 25px;
+        }
+    }
+    button
+    {
+        background: #E8B968;
+        &:hover
+        {
+            background: RGBA(0, 0, 0, 0.7);
+        }
+    }
 }
 footer
 {
@@ -152,17 +197,78 @@ footer
         -moz-transition: all 0.5s ease;
          -webkit-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
+         img
+         {
+            width: 100%;
+         }
 &:hover, &:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -o-transform: translate(0, -15px); -moz-transform: translate(0, -15px); }
 
 }
 footer {
   background-color:#111;
-  ul {
-    list-style: none;
+  ul
+  {
+    margin-top: 25px;
   }
   a {
     text-decoration: none;
     color:#fff;
+    &:hover
+    {
+        text-decoration: none;
+    }
   }
+  li
+  {
+      text-align: center;
+      margin-top: 10px;
+  }
+  img
+  {
+      margin: auto;
+      width: 100px;
+  }
+}
+@media (max-width: 992px)
+{
+    .iMac
+    {
+        background: #E8B968;
+    }
+    .bigone
+    {
+        .border-right
+        {
+            border-right: 0;
+        }
+	.padding80{
+		padding:0;
+	}
+        img
+        {
+            width: auto;
+            margin: auto;
+        }
+        .flat-box
+        {
+            padding: 50px 0;
+            &:hover,
+            &:focus
+            {
+                -ms-transform: translate(0, -45px);
+                transform: translate(0, -45px);
+                -webkit-transform: translate(0, -45px);
+                -o-transform: translate(0, -45px);
+                -moz-transform: translate(0, -45px);
+            }
+        }
+    }
 
+    footer
+    {
+	    img
+	    {
+		    margin-top: 25px;
+	    }
+    }
 }
