@@ -105,7 +105,7 @@ header
     padding: 140px 0;
 
     color: #fff;
-    background: url(../images/slider.jpg) center no-repeat;
+    background: url(../images/sliderbg.jpg) center no-repeat;
     background-size: cover;
     h1
     {
@@ -121,11 +121,18 @@ header
         margin: 50px 0;
         font-style: italic;
     }
+    #firstSlider
+    {
+        ol
+        {
+            background: #fff;
+        }
+    }
 }
 
 .bigone
 {
-    background:#f6f6f4 url(../images/arrow-bg.jpg) 51.3% -1px no-repeat;
+    background:#f6f6f4 url(../images/arrowbg.jpg) top no-repeat;
     display:block;
     padding-top:175px;
     padding-bottom:136px;
@@ -147,10 +154,6 @@ header
     .border-right
     {
         border-right: 1px solid rgba(208, 217, 226, 0.4);
-    }
-    .flex-control-nav
-    {
-	    margin-left:-13px;
     }
     h3
     {
