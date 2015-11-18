@@ -49,12 +49,6 @@ header
 {
     padding: 100px 0;
 
-    background: url('../images/background.jpg') center no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-            background-size: cover;
     p
     {
         padding: 35px 0 97px 0;
@@ -87,11 +81,6 @@ header
 {
     padding: 15px 0;
 
-    background: #E8B968 url('../images/iMac.jpg') center no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
     button
     {
         background: #02596B;
@@ -272,3 +261,7 @@ footer {
 	    }
     }
 }
+ // Parallax
+.parallax-1, .parallax-2 {height: 900px;}
+.parallax-1{background: url('../images/background.jpg') 100% 80% fixed ;background-size: cover;}
+.parallax-2{background: url('../images/iMac.jpg') 100% 80% fixed ;background-size: cover;}
