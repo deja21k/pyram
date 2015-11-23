@@ -16,6 +16,14 @@ p
 {
     font: 400 15px / 30px OpenSans; color: white;
 }
+a
+{
+    &:focus,
+    &:hover
+    {
+        text-decoration: none;
+    }
+}
 button
 {
     font-size: 22px;
@@ -44,6 +52,11 @@ button
         background-color: #1a1e1f;
     }
 }
+// Parallax
+.parallax-1, .parallax-2 {height: 900px;}
+.parallax-1{background: url('../images/background.jpg') 100% 80% fixed ;background-size: cover;}
+.parallax-2{background: url('../images/iMac.jpg') 100% 80% fixed ;background-size: cover;}
+
 .navbar-default {
     background: rgba(232, 186, 90, 0.9);
     border: 0;
@@ -71,7 +84,7 @@ button
                 color: #fff;
                 &:hover
                 {
-                    color: #02596B;    
+                    color: #02596B;
                 }
             }
 
@@ -107,12 +120,19 @@ header
     }
     button
     {
-        background: RGBA(232, 185, 104, 0);
-        border: 2px solid #fff;
+        background: rgba(0, 0, 0, 0.7);
+        a
+        {
+            color: #fff;
+            text-decoration: none;
+            &:hover
+            {
+                color: #fff;
+            }
+        }
         &:hover
         {
-            border: 2px solid #000;
-            background: RGBA(0, 0, 0, 0.7);
+            background:rgba(232, 186, 90, 0.9);
         }
 
     }
@@ -125,10 +145,10 @@ header
     button
     {
         background: #02596B;
-        margin: 40px 0 169px;
+        margin: 40px 0;
         &:hover
         {
-            background: RGBA(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.9);
         }
     }
     h1
@@ -210,7 +230,7 @@ header
         background: #E8B968;
         &:hover
         {
-            background: RGBA(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.9);
         }
     }
 }
@@ -262,6 +282,34 @@ footer {
 }
 @media (max-width: 992px)
 {
+    button
+    {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .navbar-default
+    {
+        .navbar-brand
+        {
+            margin-top: -5px;
+        }
+        .navbar-nav
+        {
+            li a
+            {
+                text-align: center;
+            }
+        }
+    }
+    .parallax-1{
+        background: url('../images/background.jpg') no-repeat center;
+        background-size: cover;
+    }
+    .parallax-2{
+        background: url('../images/iMac.jpg') no-repeat center ;
+        background-size: cover;
+    }
+    .parallax-1, .parallax-2 {height: auto;}
     .iMac
     {
         background: #E8B968;
@@ -272,9 +320,10 @@ footer {
         {
             border-right: 0;
         }
-	.padding80{
-		padding:0;
-	}
+    	.padding80
+        {
+    		padding:0;
+    	}
         img
         {
             width: auto;
@@ -293,14 +342,14 @@ footer {
                 -moz-transform: translate(0, -45px);
             }
         }
+        button
+        {
+            margin: 0 auto;
+            display: block;
+        }
     }
 
 }
- // Parallax
-.parallax-1, .parallax-2 {height: 900px;}
-.parallax-1{background: url('../images/background.jpg') 100% 80% fixed ;background-size: cover;}
-.parallax-2{background: url('../images/iMac.jpg') 100% 80% fixed ;background-size: cover;}
-
 
 @media(min-width:767px) {
     .navbar {
