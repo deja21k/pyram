@@ -44,6 +44,48 @@ button
         background-color: #1a1e1f;
     }
 }
+.navbar-default {
+    background: rgba(232, 186, 90, 0.9);
+    border: 0;
+    color: #fff;
+    .navbar-nav
+    {
+        li
+        {
+            a
+            {
+                text-transform: uppercase;
+                color:#fff;
+                &:hover
+                {
+                    color: #02596B;
+                }
+            }
+
+        }
+        .active
+        {
+            a
+            {
+                background: rgba(2, 89, 109, 1);
+                color: #fff;
+                &:hover
+                {
+                    color: #02596B;    
+                }
+            }
+
+        }
+    }
+    .navbar-brand
+    {
+        img
+        {
+            height: 100%;
+        }
+    }
+
+}
 header
 {
     padding: 100px 0;
@@ -253,13 +295,6 @@ footer {
         }
     }
 
-    footer
-    {
-	    img
-	    {
-		    margin-top: 25px;
-	    }
-    }
 }
  // Parallax
 .parallax-1, .parallax-2 {height: 900px;}
