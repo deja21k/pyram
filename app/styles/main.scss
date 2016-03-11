@@ -71,7 +71,8 @@ button
                 color:#fff;
                 &:hover
                 {
-                    color: #02596B;
+                    color: #fff;
+                    background: rgb(2, 89, 109)
                 }
             }
 
@@ -409,9 +410,6 @@ footer {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 10px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
