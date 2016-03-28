@@ -1,0 +1,14 @@
+{
+  "name": "HoverEffectIdeas",
+  "homepage": "https://github.com/codrops/HoverEffectIdeas",
+  "_release": "3bf44a3aab",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3bf44a3aab6f2baadbefebfa432fdaae9d12dbf0"
+  },
+  "_source": "git://github.com/codrops/HoverEffectIdeas.git",
+  "_target": "*",
+  "_originalSource": "HoverEffectIdeas",
+  "_direct": true
+}
