@@ -1,0 +1,12 @@
+{
+  "name": "ScrollToPlugin.min",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 23 Dec 2015 06:00:56 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js",
+  "_target": "*",
+  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js",
+  "_direct": true
+}

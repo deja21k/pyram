@@ -1,0 +1,12 @@
+{
+  "name": "TweenMax.min",
+  "_cacheHeaders": {
+    "Last-Modified": "Tue, 19 Jan 2016 12:01:04 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js",
+  "_target": "*",
+  "_originalSource": "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js",
+  "_direct": true
+}
