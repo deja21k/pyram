@@ -26,7 +26,7 @@ $(window).load(function () {
     animation: "slide",
     directionNav: false,
     controlNav: true,
-    touch: false,
+    touch: true,
     start: function start() {
       $('.flex-control-nav li a').on('mouseover', function () {
         $(this).trigger('click');
