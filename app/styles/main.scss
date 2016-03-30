@@ -343,6 +343,16 @@ footer {
 
 @media (max-width: 992px)
 {
+    .container
+    {
+        .padding-xs
+        {
+            padding: 0 40px;
+        }
+    }
+    .padding-xs{
+        padding: 0 40px 0 15px;
+    }
     .navbar-default .navbar-brand
     {
         margin-top: 0;
@@ -413,8 +423,15 @@ footer {
             display: block;
         }
     }
+        footer {
+            img {
+                margin:0px;
+                margin-bottom: 35px;
+            }
+        }
 
 }
+
 
 @media(min-width:767px) {
     .navbar {
