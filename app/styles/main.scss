@@ -176,7 +176,7 @@ header
     padding: 140px 0;
 
     color: #fff;
-    background: url(../images/sliderbg.jpg) center no-repeat;
+    background: url("../images/sliderbg.jpg") center no-repeat;
     background-size: cover;
     h1
     {
@@ -659,12 +659,13 @@ figure.effect-goliath:hover p {
 	transform: translate3d(0,0,0);
 }
 
-@media (max-width: 992px) {
-    figure.effect-lily {
-    	img {
-    		margin-bottom: 80px;
-
-    	}
-
+// Flex Slider
+.flex-control-paging li a
+{
+    border: 2px solid #fff;
+    background: transparent;
 }
+
+.flex-control-paging li a.flex-active{
+    background: #fff;
 }
