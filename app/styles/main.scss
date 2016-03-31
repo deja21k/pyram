@@ -64,6 +64,15 @@ button
     background-size: contain;
 }
 
+.navbar-toggle
+{
+  display: block;
+    box-shadow: none;
+   .icon-bar
+   {
+    background: #fff;
+   }
+}
 .navbar-default {
     background: rgba(232, 186, 90, 0.9);
     border: 0;
@@ -109,8 +118,7 @@ button
 }
 header
 {
-    padding: 100px 0;
-
+    padding: 20px 0 100px;
     p
     {
         padding: 35px 0 97px 0;
@@ -699,7 +707,6 @@ figure.effect-goliath:hover p {
 // Slide Out
 .slideout-menu {
   position: fixed;
-  left: 0;
   top: 0;
   bottom: 0;
   right: 0;
@@ -724,9 +731,10 @@ figure.effect-goliath:hover p {
 
 .slideout-open .slideout-menu {
   display: block;
+  background: #000;
 }
 
-// @media (max-width: 767px)
+@media (max-width: 767px)
 {
     .parallax-2
     {
