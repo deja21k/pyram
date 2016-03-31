@@ -3,6 +3,11 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 // endbower
+
+body {
+  width: 100%;
+  height: 100%;
+}
 h1
 {
     font: 200 50px / 53px OpenSans; color: white;
@@ -154,7 +159,7 @@ header
 
     button
     {
-        background: #02596B;
+        background: rgb(56, 156, 174);
         margin: 40px 0;
         &:hover
         {
@@ -167,6 +172,7 @@ header
     }
     p
     {
+
         padding-top: 47px;
     }
 }
@@ -362,6 +368,11 @@ footer {
         font-size: 18px;
         letter-spacing: 1px;
     }
+    // .iMac {
+    //     @include respond-to (phone) {
+    //
+    //     }
+    // }
     .navbar-default
     {
         .navbar-brand
@@ -385,10 +396,6 @@ footer {
         background-size: cover;
     }
     .parallax-1, .parallax-2 {height: auto;}
-    .iMac
-    {
-        background: #E8B968;
-    }
     .bigone
     {
         .border-right
@@ -682,8 +689,58 @@ figure.effect-goliath:hover p {
 {
     border: 2px solid #fff;
     background: transparent;
+    box-shadow: none;
 }
 
 .flex-control-paging li a.flex-active{
     background: #fff;
+}
+
+// Slide Out
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+// @media (max-width: 767px)
+{
+    .parallax-2
+    {
+
+        background: rgb(208,34,67);
+    }
+    .paddingh10px {
+      padding-left: 10px;
+    }
+
+    .padding0 {
+      padding:0px;
+    }
+    .bigone {
+      padding-top: 0;
+    }
 }

@@ -1,11 +1,3 @@
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -107,3 +99,27 @@ $(function(){
 	});
 
 });
+/***************** Toggle Collapsed On Navbar ******************/
+			$('.navbar-toggle').click(function () {
+				$('.navbar-toggle').toggleClass('collapsed');
+			});
+
+			/***************** Slideout ******************/
+			if ($('#menu').length) {
+
+				var slideout = new Slideout({
+					'panel': document.getElementById('panel'),
+					'menu': document.getElementById('menu'),
+					'padding': 256,
+					'tolerance': 70,
+					'side': 'right',
+					'touch': false
+				});
+
+				// Toggle button
+				document.querySelector('.navbar-toggle').addEventListener('click', function() {
+					slideout.toggle();
+				});
+			}
+
+	

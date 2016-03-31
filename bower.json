@@ -10,7 +10,8 @@
     "gsap": "^1.18.2",
     "ScrollToPlugin.min": "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js",
     "TweenMax.min": "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js",
-    "HoverEffectIdeas": "*"
+    "HoverEffectIdeas": "*",
+    "slideout.js": "^0.1.12"
   },
   "overrides": {
     "bootstrap-sass": {
