@@ -1,23 +1,68 @@
-@font-face {
-  font-family: 'LeagueSpartan-Bold';
-  src: url('fonts/LeagueSpartan-Bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/LeagueSpartan-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/LeagueSpartan-Bold.woff') format('woff'), /* Modern Browsers */
-       url('fonts/LeagueSpartan-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/LeagueSpartan-Bold.svg#211ac8f8a3bc529cc41961980dffd6dd') format('svg'); /* Legacy iOS */
+//fonts
+$font_0: Lato;
+$font_1: League Spartan;
+$font_2: Open Sans Light;
+$font_3: Open Sans;
 
-  font-style:   normal;
-  font-weight:  700;
+//urls
+$url_0: url(Lato-Bold.eot);
+$url_1: url(Lato-Bold.eot?#iefix);
+$url_2: url(Lato-Bold.woff);
+$url_3: url(Lato-Bold.ttf);
+$url_4: url(Lato-Bold.svg#eea591db52cf6ebc8992abb7621b9256);
+$url_5: url(LeagueSpartan-Bold.eot);
+$url_6: url(LeagueSpartan-Bold.eot?#iefix);
+$url_7: url(LeagueSpartan-Bold.woff);
+$url_8: url(LeagueSpartan-Bold.ttf);
+$url_9: url(LeagueSpartan-Bold.svg#211ac8f8a3bc529cc41961980dffd6dd);
+$url_10: url(OpenSans-Light.eot);
+$url_11: url(OpenSans-Light.eot?#iefix);
+$url_12: url(OpenSans-Light.woff);
+$url_13: url(OpenSans-Light.ttf);
+$url_14: url(OpenSans-Light.svg#09be4bfe8975a657af6444a6f1d73848);
+$url_15: url(OpenSans-LightItalic.eot);
+$url_16: url(OpenSans-LightItalic.eot?#iefix);
+$url_17: url(OpenSans-LightItalic.woff);
+$url_18: url(OpenSans-LightItalic.ttf);
+$url_19: url(OpenSans-LightItalic.svg#fccccf1acf55b11d3e92cdf123b28da0);
+$url_20: url(OpenSans-Regular.eot);
+$url_21: url(OpenSans-Regular.eot?#iefix);
+$url_22: url(OpenSans-Regular.woff);
+$url_23: url(OpenSans-Regular.ttf);
+$url_24: url(OpenSans-Regular.svg#dc56f0938c09c27a4156bb0f8f5176a2);
+
+@font-face {
+	font-family: $font_0;
+	src: $url_0;
+	src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
+	font-style: normal;
+	font-weight: 700;
 }
-
 @font-face {
-  font-family: 'OpenSans';
-  src: url('fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/OpenSans-Regular.svg#dc56f0938c09c27a4156bb0f8f5176a2') format('svg'); /* Legacy iOS */
-
-  font-style:   normal;
-  font-weight:  400;
+	font-family: $font_1;
+	src: $url_5;
+	src: $url_6 format('embedded-opentype'), $url_7 format('woff'), $url_8 format('truetype'), $url_9 format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: $font_2;
+	src: $url_10;
+	src: $url_11 format('embedded-opentype'), $url_12 format('woff'), $url_13 format('truetype'), $url_14 format('svg');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: $font_2;
+	src: $url_15;
+	src: $url_16 format('embedded-opentype'), $url_17 format('woff'), $url_18 format('truetype'), $url_19 format('svg');
+	font-style: italic;
+	font-weight: 200;
+}
+@font-face {
+	font-family: $font_3;
+	src: $url_20;
+	src: $url_21 format('embedded-opentype'), $url_22 format('woff'), $url_23 format('truetype'), $url_24 format('svg');
+	font-style: normal;
+	font-weight: 400;
 }

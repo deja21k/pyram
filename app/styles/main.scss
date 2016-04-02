@@ -3,19 +3,28 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 // endbower
+@import "fonts";
 
 body {
   width: 100%;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 h1
 {
-    font: 200 50px / 53px OpenSans; color: white;
+    font: 200 50px / 53px $font_1;
+    color: white;
     letter-spacing: 0.03em;
 }
-h3
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
 {
-	font-family: LeagueSpartan-Bold;
+  font-family: $font_1;
 }
 p
 {
@@ -55,6 +64,7 @@ button
     {
         text-decoration: none;
         background-color: #1a1e1f;
+        outline:none;
     }
 }
 // Parallax
@@ -145,6 +155,10 @@ header
             {
                 color: #fff;
             }
+            &:focus {
+              outline:none;
+              color:#fff;
+            }
         }
         &:hover
         {
@@ -173,6 +187,9 @@ header
         &:hover
         {
             background: rgba(0, 0, 0, 0.9);
+        }
+        &:focus {
+          outline: none;
         }
     }
     h1
@@ -361,16 +378,6 @@ footer {
 
 @media (max-width: 992px)
 {
-    .container
-    {
-        .padding-xs
-        {
-            padding: 0 40px;
-        }
-    }
-    .padding-xs{
-        padding: 0 40px 0 15px;
-    }
     .navbar-default .navbar-brand
     {
         margin-top: 0;
@@ -404,8 +411,8 @@ footer {
         background-size: cover;
     }
     .parallax-2{
-        background: url('../images/iMac.jpg') no-repeat center ;
         background-size: cover;
+        background: #d02242
     }
     .parallax-1, .parallax-2 {height: auto;}
     .bigone
@@ -460,6 +467,7 @@ footer {
     .top-nav-collapse {
         padding: 0;
     }
+
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -754,12 +762,5 @@ figure.effect-goliath:hover p {
     }
     .bigone {
       padding-top: 0;
-    }
-    .margin35px {
-      margin-left: 35px;
-    }
-    .h_padding_xs {
-      padding-left: 15px;
-      padding-bottom: 30px;
     }
 }
