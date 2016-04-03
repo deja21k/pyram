@@ -73,7 +73,6 @@ button
 .parallax-2 {background: #D02242 url("../images/iMac.jpg") no-repeat center;
     background-size: contain;
 }
-
 .navbar-toggle
 {
   display: block;
@@ -717,6 +716,50 @@ figure.effect-goliath:hover p {
 }
 
 // Slide Out
+.menu-header {
+  border-bottom: 1px solid #2a2d2f;
+    padding: 20px 0 20px 60px;
+    background: url('../images/logo-small.png') no-repeat 11px 22px;
+    background-size: 40px;
+}
+.menu-header-title {
+  text-decoration:none;
+  color:#fff;
+  padding-top:2px;
+  &:hover {
+    text-decoration:underline;
+  }
+}
+.menu-section {
+  margin:25px 0;
+}
+.menu-section-list {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+    a {
+    display: block;
+    padding: 10px 20px;
+    color:#fff;
+    text-decoration:none;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+    }
+    -webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+}
+
+}
+
 .slideout-menu {
   position: fixed;
   top: 0;
@@ -743,7 +786,8 @@ figure.effect-goliath:hover p {
 
 .slideout-open .slideout-menu {
   display: block;
-  background: #000;
+  background-color: #1D1F20;
+  background-image: linear-gradient(145deg, #1D1F20, #404348);;
 }
 
 @media (max-width: 767px)
@@ -756,11 +800,19 @@ figure.effect-goliath:hover p {
     .paddingh10px {
       padding-left: 10px;
     }
+    .section_padding-xs {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     .padding0 {
       padding:0px;
     }
     .bigone {
       padding-top: 0;
+
+      button {
+        margin-left:30px;
+      }
     }
 }
