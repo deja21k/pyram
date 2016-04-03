@@ -28,7 +28,8 @@ h6
 }
 p
 {
-    font: 400 15px / 30px OpenSans; color: white;
+    font: 400 15px / 30px $font_3;
+    color: white;
 }
 a
 {
@@ -131,13 +132,9 @@ header
     p
     {
         padding: 35px 0 97px 0;
-
-        color: #fff;
-    }
-    .italic
-    {
-        font-style: italic;
         font-size: 16px;
+        color: #fff;
+        font-style: italic;
     }
     img
     {
