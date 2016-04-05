@@ -142,7 +142,7 @@ header
 
 .iMac
 {
-    padding: 15px 0;
+    padding: 86px 0;
 
     button
     {
@@ -204,10 +204,19 @@ header
 
 .bigone
 {
-    background:#f6f6f4 url(../images/arrowbg.jpg) top no-repeat;
+    background:#f6f6f4;
     display:block;
-    padding-top:175px;
     padding-bottom:136px;
+    .triangle {
+      border-color: #3FA3BA transparent;
+      border-style: solid;
+      border-width:32px 22px 0 22px;
+      height:0;
+      width:0;
+      display: block;
+      margin:auto;
+      padding-bottom:175px;
+    }
     p {
       color:#7a8387;
       padding-bottom: 50px;
