@@ -98,7 +98,7 @@ $(function(){
 					'padding': 256,
 					'tolerance': 70,
 					'side': 'right',
-					'touch': false
+					'touch': true
 				});
 
 				// Toggle button
@@ -106,3 +106,4 @@ $(function(){
 					slideout.toggle();
 				});
 			}
+				// Close on click

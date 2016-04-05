@@ -96,7 +96,7 @@ if ($('#menu').length) {
 		'padding': 256,
 		'tolerance': 70,
 		'side': 'right',
-		'touch': false
+		'touch': true
 	});
 
 	// Toggle button
@@ -104,4 +104,5 @@ if ($('#menu').length) {
 		slideout.toggle();
 	});
 }
+// Close on click
 //# sourceMappingURL=main.js.map
