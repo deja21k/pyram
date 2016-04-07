@@ -92,7 +92,12 @@ button
    .icon-bar
    {
     background: #fff;
+    width: 30px;
+    height: 3px;
    }
+}
+.margin_hamb {
+  margin-bottom: 5px;
 }
 header
 {
@@ -356,11 +361,11 @@ footer {
 
 @media (max-width: 992px)
 {
-    // .iMac {
-    //     @include respond-to (phone) {
-    //
-    //     }
-    // }
+    .iMac {
+      button {
+        font-size: 20px;
+      }
+    }
 
     .parallax-1{
         background: url('../images/background.jpg') no-repeat center;
@@ -403,6 +408,7 @@ footer {
         {
             margin: 0 auto;
             display: block;
+
         }
     }
         footer {
@@ -622,11 +628,15 @@ li {
 .slideout-open .slideout-menu {
   display: block;
   background-color: #1D1F20;
-  background-image: linear-gradient(145deg, #1D1F20, #404348);;
 }
 
 @media (max-width: 767px)
 {
+  .iMac {
+    button {
+      font-size: 17px;
+    }
+  }
     .parallax-2
     {
 
