@@ -104,5 +104,12 @@ if ($('#menu').length) {
 		slideout.toggle();
 	});
 }
-// Close on click
+/***************** Trigger Click For Closing Menu ******************/
+function clickClosingMenu() {
+	$('#menu').on('click', function (e) {
+		$('.navbar-toggle').trigger('click');
+		mobileMenuClick();
+	});
+}
+clickClosingMenu();
 //# sourceMappingURL=main.js.map
