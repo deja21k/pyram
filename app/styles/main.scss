@@ -358,80 +358,6 @@ footer {
   }
 }
 
-
-@media (max-width: 992px)
-{
-    .iMac {
-      button {
-        font-size: 20px;
-      }
-    }
-
-    .parallax-1{
-        background: url('../images/background.jpg') no-repeat center;
-        background-size: cover;
-    }
-    .parallax-2{
-        background-size: cover;
-        background: #d02242
-    }
-    .parallax-1, .parallax-2 {height: auto;}
-    .bigone
-    {
-        .border-right
-        {
-            border-right: 0;
-        }
-    	.padding80
-        {
-    		padding:0;
-    	}
-        img
-        {
-            width: auto;
-            margin: auto;
-        }
-        .flat-box
-        {
-            padding: 50px 0;
-            &:hover,
-            &:focus
-            {
-                -ms-transform: translate(0, -45px);
-                transform: translate(0, -45px);
-                -webkit-transform: translate(0, -45px);
-                -o-transform: translate(0, -45px);
-                -moz-transform: translate(0, -45px);
-            }
-        }
-        button
-        {
-            margin: 0 auto;
-            display: block;
-
-        }
-    }
-        footer {
-            img {
-                margin:0px;
-                margin-bottom: 35px;
-            }
-        }
-
-}
-
-
-@media(min-width:767px) {
-    .navbar {
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-
-}
-
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
@@ -630,6 +556,88 @@ li {
   background-color: #1D1F20;
 }
 
+
+
+@media (max-width: 992px)
+{
+    .iMac {
+      button {
+        font-size: 20px;
+      }
+    }
+
+    .parallax-1{
+        background: url('../images/background.jpg') no-repeat center;
+        background-size: cover;
+    }
+    .parallax-2{
+        background-size: cover;
+        background: #d02242
+    }
+    .parallax-1, .parallax-2 {height: auto;}
+    .bigone
+    {
+        .border-right
+        {
+            border-right: 0;
+        }
+    	.padding80
+        {
+    		padding:0;
+    	}
+        img
+        {
+            width: auto;
+            margin: auto;
+        }
+        .flat-box
+        {
+            padding: 50px 0;
+            &:hover,
+            &:focus
+            {
+                -ms-transform: translate(0, -45px);
+                transform: translate(0, -45px);
+                -webkit-transform: translate(0, -45px);
+                -o-transform: translate(0, -45px);
+                -moz-transform: translate(0, -45px);
+            }
+        }
+        button
+        {
+            margin: 0 auto;
+            display: block;
+
+        }
+    }
+        footer {
+            img {
+                margin:0px;
+                margin-bottom: 35px;
+            }
+        }
+  figure.effect-goliath figcaption
+  {
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    margin: 0 15px;
+  }
+  figure.effect-goliath,
+  figure.effect-goliath:hover
+  {
+    img,
+    h2,
+    p
+    {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+}
 @media (max-width: 767px)
 {
   .iMac {
@@ -660,4 +668,18 @@ li {
         margin-left:30px;
       }
     }
+  figure.effect-goliath figcaption
+  {
+    margin: 0;
+  }
+}
+@media(min-width:767px) {
+    .navbar {
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+
 }
